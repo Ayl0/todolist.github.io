@@ -1,0 +1,130 @@
+:root{
+    font-family: "Josefin Sans", "sans-serif";
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(42, 34, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    height: 50vh;
+    justify-content: center;
+    width: 100%;
+}
+
+nav>div>img{
+    min-width: 100%;
+    height: 50vh;
+    width: auto;
+    float: right;
+}
+
+nav>h1{
+    color: rgb(42, 34, 44);
+    font-size: 50px;
+    top: 30px;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+    border-top:1rem;
+    border-top-style: solid;
+}
+
+#container2{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+form>input{
+    background-color: rgb(246, 189, 199);
+    width: 45%;
+    border: 0;
+    padding: 5px 10px;
+    height: 1.5rem;
+    border-radius: 5px;
+}
+
+#add{
+    background-color: rgb(246, 189, 199);
+    height: 100%;
+    border: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 500px;
+}
+
+#tasks-card{
+    padding: 0;
+    position: absolute;
+    margin-top: 250px;
+    z-index: 2;
+    width: 50%;
+    min-height: 40vh;
+    background-color: rgb(246, 189, 199);
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px 0px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    border-radius: inherit;
+    list-style: none;
+}
+
+li{
+    margin: 0;
+    border-radius: inherit;
+    padding: 0.7rem 1rem;
+}
+li:hover{
+    background-color: rgb(187, 145, 152);
+
+}
+
+.fa-circle-check{
+    margin-right: 4px;
+}
+
+li>i{
+    color: gray;
+}
+.fa-minus{
+    visibility: hidden;
+    color: gray;
+    float: right;
+}
+li>i:hover{
+    color: pink;
+    cursor: pointer;
+}
+ul:hover .fa-minus{
+    visibility: visible;
+}
+ul .fa-minus:hover{
+    color: red;
+}
